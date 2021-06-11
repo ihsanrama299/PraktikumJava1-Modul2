@@ -16,18 +16,12 @@ public class MahasiswaBeraksi {
         mahasiswa.nama = "Sembilu";
         mahasiswa.tanggalLahir = simpleDateFormat.parse("09-09-2009");
 
-        System.out.println("Nama \t\t\t : " + mahasiswa.nama);
-        System.out.println("NPM \t\t\t : " + mahasiswa.npm);
-        System.out.println("Tanggal Lahir \t : " + simpleDateFormat.format(mahasiswa.tanggalLahir));
+        mahasiswa.tampilkanAtribut();
+        mahasiswa.menyapa();
+        System.out.println("Usiaku : " + mahasiswa.hitungUsia() + " tahun");
 
-        Mahasiswa mahasiswa2 = new Mahasiswa();
-        mahasiswa2.npm = "19638888";
-        mahasiswa2.nama = "Delapu";
-        mahasiswa2.tanggalLahir = simpleDateFormat.parse("08-08-2008");
-
-        System.out.println("Nama \t\t\t : " + mahasiswa2.nama);
-        System.out.println("NPM \t\t\t : " + mahasiswa2.npm);
-        System.out.println("Tanggal Lahir \t : " + simpleDateFormat.format(mahasiswa2.tanggalLahir));
+        Mahasiswa mahasiswa2 = new Mahasiswa("19638888", "Delapu", "08-08-2008");
+        mahasiswa2.tampilkanAtribut();
 
     }
 
